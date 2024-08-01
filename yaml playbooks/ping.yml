@@ -1,0 +1,10 @@
+---
+- name: ping the nodes
+  host: all
+  become: true
+  tasks:
+   -name: ping All the nodes
+   ping:
+   remote_user: ansible
+
+ 
